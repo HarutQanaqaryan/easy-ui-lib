@@ -1,0 +1,117 @@
+.slider-root {
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  height: 2px;
+  display: inline-block;
+  padding: 13px 0;
+  position: relative;
+  touch-action: none;
+}
+
+.slider-rail {
+  width: 100%;
+  max-width: 500px;
+  height: 3px;
+  display: block;
+  opacity: 0.38;
+  position: absolute;
+  border-radius: 1px;
+  background-color: grey;
+}
+.slider-line {
+  height: 10px;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  display: block;
+}
+.slider-track {
+  height: 3px;
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: var(--track-color);
+}
+.slider-thumb {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  outline: 0;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: -5px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  margin-left: -6px;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 3;
+  background: var(--thumb-color);
+}
+.slider-thumb:hover {
+  box-shadow: 0 0 0 5px #bebdbd86;
+  transition: 0.5s;
+}
+.slider-thumb:active {
+  box-shadow: 0 0 0 10px #afafaf46;
+}
+.slider-thumb::after {
+  left: var(--marks-left-percent);
+  content: attr(content);
+  position: absolute;
+  top: -10px;
+  transform: translateX(0) translateY(-100%);
+  text-align: center;
+  font-size: 12px;
+  min-width: 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 2px 4px 2px 4px;
+  z-index: 2;
+  opacity: 0;
+  transition: .2s;
+  background-color: var(--tooltip-color);
+  color: rgb(255, 255, 255);
+}
+.slider-thumb:hover::before,
+.slider-thumb:hover::after,
+.slider-thumb:focus:before,
+.slider-thumb:focus::after {
+  opacity: var(--opacity-label);
+}
+.slider-dots {
+  left: var(--left-percent);
+  width: 3px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  pointer-events: none;
+}
+
+.disabled-thumb {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  outline: 0;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: -5px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  margin-left: -6px;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgb(119, 117, 117);
+  pointer-events: none;
+}
+.hidden-input {
+    opacity: 0;
+    width: 100%;
+    position: inherit;
+    top: -8px;
+    cursor: pointer;
+}

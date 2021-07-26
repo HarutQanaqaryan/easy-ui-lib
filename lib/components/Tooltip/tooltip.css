@@ -1,0 +1,102 @@
+.tooltip--primary,
+.tooltip--destructive,
+.tooltip--neutral {
+  position: relative;
+  display: inline-block;
+}
+.tooltip--primary::after,
+.tooltip--destructive::after,
+.tooltip--neutral::after {
+  content: attr(content);
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  transform: translateX(-50%) translateY(-100%);
+  text-align: center;
+  font-size: 12px;
+  min-width: 30px;
+  border-radius: 5px;
+  pointer-events: none;
+  padding: 4px 4px;
+  z-index: 99;
+  opacity: 0;
+  transition: 0.5s;
+}
+.top::before {
+  left: 50%;
+}
+.bottom::before {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg);
+}
+.right::before {
+  left: 100%;
+  top: 50%;
+  margin-left: 1px;
+  transform: translatey(-50%) rotate(90deg);
+}
+.left::before {
+  left: 0%;
+  top: 50%;
+  margin-left: -12px;
+  transform: translatey(-50%) rotate(-90deg);
+}
+.tooltip--primary::after {
+  color: rgb(34, 30, 30);
+  background: #1dd4ce;
+}
+.tooltip--destructive::after {
+  background: #2c3e50;
+  color: white;
+}
+.tooltip--neutral::after {
+  background: #fafbfc;
+  color: rgb(0, 0, 0);
+  border: 0.5px solid black;
+}
+.top::after {
+  left: 50%;
+}
+.top--right::after {
+  left: 100%;
+}
+.top--left::after {
+  left: 0;
+}
+.bottom--left::after {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-140%) translateY(0%);
+}
+.bottom--right::after {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(30%) translateY(0%);
+}
+.left::after {
+  left: 0%;
+  top: 50%;
+  margin-left: -8px;
+  transform: translateX(-100%) translateY(-50%);
+}
+.right::after {
+  left: 100%;
+  top: 50%;
+  margin-left: 8px;
+  transform: translateX(0%) translateY(-50%);
+}
+.bottom::after {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-50%) translateY(0%);
+}
+.tooltip--primary:hover::after,
+.tooltip--primary:hover::before,
+.tooltip--destructive:hover::after,
+.tooltip--destructive:hover::before,
+.tooltip--primary:hover::before,
+.tooltip--neutral:hover::after,
+.tooltip--neutral:hover::before {
+  opacity: 1;
+}

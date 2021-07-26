@@ -1,0 +1,48 @@
+.crumbs {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.crumbs:hover {
+  text-decoration: underline;
+}
+.last-crumb {
+  color: grey;
+  pointer-events: none;
+  cursor: none;
+  font-weight: 200px;
+  margin-left: 8px;
+}
+.crumbs--primary {
+  color: #1dd4ce;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.crumbs--destructive {
+  color: #2c3e50;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.tag--crumb {
+  background-color: rgba(199, 198, 198, 0.226);
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px;
+}
+.tag--crumb:hover {
+    transition: 0.5s;
+    background-color: rgba(199, 198, 198, 0.568);
+}
+.crumb-btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(199, 198, 198, 0.226);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

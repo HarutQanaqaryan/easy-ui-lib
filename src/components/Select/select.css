@@ -1,0 +1,107 @@
+.select--primary {
+  min-width: 212px;
+  display: inline-block;
+  color: #2c3e50;
+}
+
+.select-title--primary {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 40px;
+  min-width: 190px;
+  max-width: 190px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #2c3e50;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: initial;
+}
+
+.select-title--primary:hover {
+  transition: 0.3s;
+  background-color: #2c3e50;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px #2c3e50, 1px 1px 5px #e3f1ff;
+}
+
+.arrow-down {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #aaa7a7;
+  cursor: pointer;
+  background-position: calc(104% - 20px) calc(1.4em + -5px),
+    calc(104% - 14px) calc(1.4em + -5px);
+}
+
+.option--primary {
+  width: 196px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding-left: 14px;
+}
+
+.option--primary:hover {
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px #2c3e50, 1px 1px 5px #e3f1ff;
+  background-color: #899eb1;
+}
+
+.options--primary {
+  border: 1px solid #2c3e50;
+  background-color: white;
+  width: 210px;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-shadow: 2px 2px 5px #2c3e50, 1px 1px 5px #e3f1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 10;
+}
+
+.option-title--primary {
+  opacity: 0.5;
+  display: flex;
+  padding-left: 5px;
+}
+
+.multyple-titles {
+  width: 160px;
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multyple-title-block {
+  border-radius: 8px;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid #2c3e50;
+}
+
+.multiple-title-list {
+  padding: 2px;
+}
+
+.placeholder {
+  font-size: 8px;
+  padding: 0;
+  margin: 0px;
+  margin-left: 2px;
+  position: absolute;
+  z-index: 10;
+  color: #2c3e50;
+}
+.selected {
+  background-color: #899eb1;
+}

@@ -1,0 +1,197 @@
+:root {
+  --primary--normal: #1dd4ceda;
+  --primary--normal--hover: #18c0ba;
+  --primary--normal--active: #15a19d;
+  --primary--destructive: #2c3e50cb;
+  --primary--destructive--hover: #2c3e50e5;
+  --primary--destructive--active: #253544;
+  --secondary--normal: #15807c;
+  --secondary--normal--hover: #1bb1ac46;
+  --secondary--normal--active: #138f8b80;
+  --secondary--destructive: #24313f;
+  --secondary--destructive--hover: #24313f48;
+  --secondary--destructive--active: #24313f75;
+  --subtle--normal: #15807c;
+  --subtle--normal--hover: #1bb1ac46;
+  --subtle--normal--active: #138f8b80;
+  --subtle--destructive: #24313f;
+  --subtle--destructive--hover: #24313f48;
+  --subtle--destructive--active: #24313f75;
+  --white: #fff;
+  --grey: #198f8b;
+}
+
+button {
+  margin: 5px;
+}
+
+.btn {
+  width: fit-content;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 8px 14px;
+  border: none;
+  font-size: 16px;
+  width: fit-content;
+}
+.btn--primary--normal {
+  background-color: var(--primary--normal);
+  color: var(--white);
+}
+
+.btn--primary--normal:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.btn--primary--normal:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--primary--normal--hover);
+}
+
+.btn--primary--normal:active:enabled {
+  background-color: var(--primary--normal--active);
+}
+
+.btn--primary--destructive:enabled {
+  background-color: var(--primary--destructive);
+  color: var(--white);
+}
+
+.btn--primary--destructive:disabled {
+  opacity: 0.3;
+}
+
+.btn--primary--destructive:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--primary--destructive--hover);
+}
+
+.btn--primary--destructive:active:enabled {
+  background-color: var(--primary--destructive--active);
+}
+
+.btn--secondary--normal {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  color: var(--secondary--normal);
+}
+
+.btn--secondary--normal:disabled {
+  opacity: 0.3;
+}
+
+.btn--secondary--normal:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--secondary--normal--hover);
+}
+
+.btn--secondary--normal:active:enabled {
+  background-color: var(--secondary--normal--active);
+}
+
+.btn--secondary--destructive {
+  background-color: var(--white);
+  border: 1px solid var(--secondary--destructive);
+  color: var(--secondary--destructive);
+}
+
+.btn--secondary--destructive:disabled {
+  opacity: 0.3;
+}
+
+.btn--secondary--destructive:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--secondary--destructive--hover);
+}
+
+.btn--secondary--destructive:active:enabled {
+  background-color: var(--secondary--destructive--active);
+}
+
+.btn--subtle--normal {
+  background-color: var(--white);
+  border: none;
+  color: var(--subtle--normal);
+}
+
+.btn--subtle--normal:disabled {
+  opacity: 0.3;
+}
+
+.btn--subtle--normal:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--subtle--normal--hover);
+}
+
+.btn--subtle--normal:active:enabled {
+  background-color: var(--subtle--normal--active);
+}
+
+.btn--subtle--destructive {
+  background-color: var(--white);
+  border: none;
+  color: var(--subtle--destructive);
+}
+
+.btn--subtle--destructive:disabled {
+  opacity: 0.3;
+}
+
+.btn--subtle--destructive:hover:enabled {
+  transform: translateY(-1px);
+  background-color: var(--subtle--destructive--hover);
+}
+
+.btn--subtle--destructive:active:enabled {
+  background-color: var(--subtle--destructive--active);
+}
+
+.primary--normall {
+  border: 2px solid #fff;
+  border-top: 2px solid #15a19d;
+}
+
+.primary--destructive {
+  border: 2px solid rgb(185, 184, 184);
+  border-top: 2px solid #fff;
+}
+
+.secondary--normal {
+  border: 2px solid rgba(212, 210, 210, 0.644);
+  border-top: 2px solid #15a19d;
+}
+
+.secondary--destructive {
+  border: 2px solid #24313f54;
+  border-top: 2px solid #24313f;
+}
+
+.subtle--normal {
+  border: 2px solid rgba(212, 210, 210, 0.644);
+  border-top: 2px solid #15a19d;
+}
+
+.subtle--destructive {
+  border: 2px solid #24313f54;
+  border-top: 2px solid #24313f;
+}
+
+.loader {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin: 0px 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

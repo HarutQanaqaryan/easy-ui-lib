@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 15px;
+}
+
+.standard {
+  outline: 0;
+  border-style: none none solid none;
+  padding: 4px;
+  font-size: 16px;
+  border-color: #ccc;
+  width: 100%;
+  transition: all 0.5;
+}
+
+.standard:focus {
+  box-shadow: none;
+  border-color: #0f6662;
+}
+
+.standard:focus + .standard-text {
+  transform: translateY(-2.8em) scale(0.8);
+  color: rgb(63, 62, 62);
+}
+
+.standard-text {
+  font-size: 1em;
+  color: #aaa;
+  display: block;
+  opacity: 1;
+  transform: translateY(-1.8em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  cursor: text;
+  pointer-events: none;
+}
+
+.filled {
+  outline: 0;
+  border-style: none none solid none;
+  padding: 24px 6px 6px 15px;
+  font-size: 16px;
+  border-color: rgb(202, 200, 200);
+  background: rgba(204, 204, 204, 0.562);
+  width: 100%;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
+.filled:hover:enabled {
+  background: rgba(204, 204, 204, 0.76);
+}
+
+.filled-text {
+  font-size: 1em;
+  color: rgba(85, 84, 84, 0.747);
+  display: block;
+  opacity: 1;
+  transform: translateY(-2.2em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  cursor: text;
+  pointer-events: none;
+  margin-left: 1em;
+}
+
+.filled:focus + .filled-text {
+  transform: translateY(-2.8em) scale(0.8);
+  color: rgb(63, 62, 62);
+}
+
+.filled:focus {
+  box-shadow: none;
+  border-color: #0f6662;
+}
+
+/* outlined  */
+.outlined {
+  outline: 0;
+  border-style: solid;
+  padding: 24px 6px 6px 15px;
+  font-size: 16px;
+  border-color: rgba(202, 200, 200, 0.459);
+  width: 100%;
+  transition: all 0.5;
+  border-radius: 4px;
+}
+
+.outlined:hover:enabled {
+  border-color: rgb(131, 129, 129);
+}
+
+.outlined-text {
+  font-size: 1em;
+  color: rgba(85, 84, 84, 0.74);
+  display: block;
+  opacity: 1;
+  transform: translateY(-2.2em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  width: max-content;
+  cursor: text;
+  pointer-events: none;
+  margin-left: 1em;
+  background-color: #fff;
+  padding: 0px 3px;
+}
+
+.outlined:focus {
+  box-shadow: none;
+  border-color: #0f6662;
+}
+
+.outlined:focus + .outlined-text {
+  transform: translateY(-3.8em) scale(0.8);
+  color: rgb(218, 52, 52);
+}
+
+.helper-text {
+  width: fit-content;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-left: 2px;
+  color: #0f6662c7;
+}
+
+.error {
+  color: red;
+  border-color: red;
+}

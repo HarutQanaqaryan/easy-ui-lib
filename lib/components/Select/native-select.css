@@ -1,0 +1,92 @@
+.native--select {
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: linear-gradient(45deg, transparent 50%, #bdbdbd 50%),
+    linear-gradient(135deg, #bdbdbd 50%, transparent 50%);
+  background-position: calc(104% - 20px) calc(1.4em + -5px),
+    calc(104% - 14px) calc(1.4em + -5px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+  color: #9e9e9e;
+}
+.native--select:disabled {
+  cursor: not-allowed;
+}
+.native--select--primary {
+  border: none;
+  border-bottom-width: 2px; 
+  border-bottom-style: solid;
+  border-bottom-color: #1DD4CE;
+  border-top-width: 2px; 
+  border-top-style: solid; 
+  border-top-color: #1DD4CE;
+}
+
+
+.native--select--primary:hover {
+  border-bottom-color: #58a5a2;
+  border-top-color: #58a5a2;
+  box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}
+.native--select--primary:focus {
+  outline: none;
+  border-bottom-color: #58a5a2;
+  border-top-color: #58a5a2;
+}
+
+.native--select--neutral {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; 
+  border-bottom-color: #9e9e9e;
+  border-top-width: 1px; 
+  border-top-style: solid; 
+  border-top-color: #9e9e9e;
+}
+.native--select--neutral:hover {
+  border-bottom-color: #424242;
+  border-top-color: #424242;
+  box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}
+.native--select--neutral:focus {
+  outline: none;
+  border-bottom-color: #212121;
+  border-top-color: #212121;
+}
+
+.native--select--dark {
+  background-color: #2C3E50;
+  border-radius: 4px;
+  color: #e0e0e0;
+}
+.native--select--dark:focus {
+  outline: none;
+}
+.native--select--dark:hover {
+  outline: none;
+  background-color: #66809759;
+  color:  #2C3E50;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.native--select--normal {
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #424242;
+}
+.native--select--normal:focus {
+  outline: none;
+}
+.native--select--normal:hover {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
