@@ -7,7 +7,7 @@ A component library for React applications.
 Easy-UI is available as an [npm package](https://www.npmjs.com/package/easy-ui-react-lib).
 
 <pre>
-$ npm i easy-ui-react-lib
+$  npm i easy-ui-react-lib
 </pre>
 
 Use named imports with our components
