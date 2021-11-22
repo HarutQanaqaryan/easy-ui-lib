@@ -12,7 +12,7 @@ $  npm i easy-ui-react-lib
 
 Use named imports with our components
 
-<pre>
+<pre> 
 import { Button } from "easy-ui-react-lib";
 </pre>
 
